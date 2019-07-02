@@ -12,6 +12,7 @@ import JenkinsBuildDuration from '../components/widgets/jenkins/build-duration'
 import BitbucketPullRequestCount from '../components/widgets/bitbucket/pull-request-count'
 import ElasticsearchHitCount from '../components/widgets/elasticsearch/hit-count'
 import GitHubIssueCount from '../components/widgets/github/issue-count'
+import UptimeRobotSites from '../components/widgets/uptimerobot/'
 
 // Theme
 import lightTheme from '../styles/light-theme'
@@ -77,6 +78,11 @@ export default () => (
     <GitHubIssueCount
       owner='danielbayerlein'
       repository='dashboard'
+    />
+    
+    <UptimeRobotSites
+      apiKey='insert your api key here'
+      title='Uptimerobot'
     />
   </Dashboard>
 )
