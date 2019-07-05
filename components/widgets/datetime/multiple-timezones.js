@@ -39,8 +39,12 @@ export default class MultipleTimezones extends Component {
 
     schema.validate(this.props).then(() => {
       this.setState({ loading: false })
-      this.timeout = setTimeout(() => this.setState({ date: new Date() }), interval)
+      this.interval = setInterval(() => this.updateTime(), interval)
     })
+  }
+
+  updateTime () {
+    this.setState({ date: new Date() })
   }
 
   componentWillUnmount () {
