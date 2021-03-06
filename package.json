@@ -33,7 +33,7 @@
     "moment-timezone": "^0.5.25",
     "next": "^9.2.2",
     "polished": "^3.6.7",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-flags": "^0.1.17",
     "styled-components": "^4.4.1",
